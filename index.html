@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAS</title>
+</head>
+<body>
+<style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #12081f;
+      margin: 0;
+      color: #e9e5f5;
+    }
+    .top {
+      background: #1c1033;
+      border-bottom: 1px solid #3b2170;
+      padding: clamp(20px, 5vw, 32px) 15px;
+      text-align: center;
+    }
+    .top span {
+      display: inline-block;
+      background: #a78bfa;
+      color: #12081f;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .top h1 {
+      margin: 0;
+      font-size: clamp(22px, 5vw, 32px);
+      color: white;
+      line-height: 1.2;
+    }
+    .top p {
+      margin: 8px 0 0 0;
+      color: #b8a9d9;
+      font-size: clamp(12px, 3vw, 14px);
+    }
+    .contenido {
+      max-width: 880px;
+      margin: 22px auto;
+      padding: 0 16px 20px 16px;
+      width: 100%;
+    }
+    .bloque {
+      background: #1d1238;
+      border: 1px solid #3b2170;
+      border-radius: 14px;
+      padding: clamp(14px, 4vw, 20px);
+      margin-bottom: 18px;
+    }
+    .bloque h2 { margin: 0; font-size: clamp(16px, 4vw, 18px); color: white; }
+    .bloque h2 b { color: #c4b5fd; }
+    .bloque > p {
+      margin: 6px 0 16px 0;
+      color: #b8a9d9;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .bloque p code {
+      background: #2a1a4d;
+      color: #ddd6fe;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    /* RESPONSIVO AUTOMÁTICO */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .grid a {
+      background: #241647;
+      border: 1px solid #4c2f8a;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding: 12px 8px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+    }
+    .grid a:hover { background: #7c3aed; border-color: #a78bfa; }
+    .grid a:active { transform: scale(0.97); }
+    .pie { text-align: center; color: #6d5a96; font-size: 12px; padding: 0 15px 22px 15px; }
+
+    /* TABLET */
+    @media (max-width: 768px) {
+      .contenido { max-width: 100%; padding: 0 12px 20px 12px; }
+      .grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+    }
+    /* CELULAR */
+    @media (max-width: 480px) {
+      .grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .grid a { font-size: 12px; padding: 11px 6px; }
+      .bloque { border-radius: 12px; }
+    }
+    /* CELULAR MUY CHICO */
+    @media (max-width: 320px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <span>SEGUNDO PARCIAL</span>
+    <h1>Mis Prácticas de JavaScript</h1>
+    <p>Portafolio de actividades • HTML + JavaScript</p>
+  </div>
+
+  <div class="contenido">
+
+    <div class="bloque">
+      <h2><b>01</b> &nbsp; JavaScript Básico</h2>
+      <p>Trabajo con <code>script</code>, <code>alert</code>, <code>prompt</code> y <code>document.write</code> para mostrar resultados directo en la página.</p>
+      <div class="grid">
+        <a href="aprendojsp.html">Aprendiendo JS</a>
+        <a href="mensaje.html">Mensaje</a>
+        <a href="clase.html">Clase</a>
+        <a href="ciudadano.html">Ciudadano</a>
+        <a href="estudiante.html">Estudiante</a>
+        <a href="semestre.html">Semestre</a>
+        <a href="suma.html">Suma</a>
+        <a href="resta.html">Resta</a>
+        <a href="multiplicacion.html">Multiplicación</a>
+        <a href="division.html">División</a>
+        <a href="promedio.html">Promedio</a>
+        <a href="dosNumerosM.html">Dos Números</a>
+        <a href="operacionesB.html">Operaciones Básicas</a>
+        <a href="operacionesBsw.html">Operaciones con Switch</a>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <h2><b>02</b> &nbsp; Condicionales</h2>
+      <p>Uso <code>if-else</code> para decidir entre dos caminos y <code>switch</code> para elegir entre varias opciones.</p>
+      <div class="grid">
+        <a href="condicional.html">Condicional</a>
+        <a href="positivonegativo.html">Positivo o Negativo</a>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <h2><b>03</b> &nbsp; Funciones</h2>
+      <p>Funciones declaradas, anónimas, flecha y recursivas. También uso parámetros y <code>return</code>.</p>
+      <div class="grid">
+        <a href="declarada.html">Función Declarada</a>
+        <a href="declaracion.html">Declaración</a>
+        <a href="anonima.html">Función Anónima</a>
+        <a href="parametros.html">Parámetros</a>
+        <a href="parametrosG.html">Parámetros G</a>
+        <a href="return.html">Return</a>
+        <a href="Flecha.html">Función Flecha</a>
+        <a href="Frecursiva.html">Función Recursiva</a>
+      </div>
+    </div>
+
+    <div class="bloque">
+      <h2><b>04</b> &nbsp; Eventos y DOM</h2>
+      <p>Botones que responden al clic y cambios en la página con <code>innerHTML</code>.</p>
+      <div class="grid">
+        <a href="boton.html">Botón</a>
+        <a href="botonD.html">Botón D</a>
+        <a href="Fevento.html">Función Evento</a>
+        <a href="inner.html">Inner</a>
+        <a href="imageninner.html">Imagen Inner</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="pie">Hecho para el 2do Parcial • JavaScript</div>
+</body>
+</html>
